@@ -1,0 +1,67 @@
+11
+
+@@ -20 +20 @@
+-        if (a <= 0 || b <= 0 || c <= 0) {
++        if (a <= 0 != b <= 0 || c <= 0) {
+
+59
+
+@@ -33 +33 @@
+-        if (trian == 0) {
++        if (trian <= 0) {
+
+70
+@@ -34 +34 @@
+-            if (a + b <= c || a + c <= b || b + c <= a) {
++            if (a + b <= c || a * c <= b || b + c <= a) {
+
+76
+@@ -34 +34 @@
+-            if (a + b <= c || a + c <= b || b + c <= a) {
++            if (a + b <= c != a + c <= b || b + c <= a) {
+
+80
+@@ -34 +34 @@
+-            if (a + b <= c || a + c <= b || b + c <= a) {
++            if (a + b <= c || a + c <= b || b % c <= a) {
+
+81
+@@ -34 +34 @@
+-            if (a + b <= c || a + c <= b || b + c <= a) {
++            if (a + b <= c || a + c <= b || b * c <= a) {
+
+87
+@@ -34 +34 @@
+-            if (a + b <= c || a + c <= b || b + c <= a) {
++            if ((a + b <= c || a + c <= b) != b + c <= a) {
+
+101
+@@ -43 +43 @@
+-        if (trian == 1 && a + b > c) {
++        if (trian <= 1 && a + b > c) {
+
+111
+@@ -43 +43 @@
+-        if (trian == 1 && a + b > c) {
++        if (trian == 1 == a + b > c) {
+
+126
+@@ -45 +45 @@
+-        } else if (trian == 2 && a + c > b) {
++        } else if (trian == 2 && a + c >= b) {
+
+128
+@@ -45 +45 @@
+-        } else if (trian == 2 && a + c > b) {
++        } else if (trian == 2 == a + c > b) {
+
+136
+@@ -47 +47 @@
+-        } else if (trian == 3 && b + c > a) {
++        } else if (trian >= 3 && b + c > a) {
+
+
+145
+@@ -47 +47 @@
+-        } else if (trian == 3 && b + c > a) {
++        } else if (trian == 3 == b + c > a) {
