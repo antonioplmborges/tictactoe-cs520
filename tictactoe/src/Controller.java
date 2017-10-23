@@ -38,12 +38,13 @@ public class Controller {
         }
     }
 
-    public void resetListener(Model model, View view){
+    public boolean resetListener(Model model, View view){
         view.getReset().addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 model.resetGame();
             }
         });
+        return true;
     }
 
 
