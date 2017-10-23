@@ -36,12 +36,19 @@ public class TestMVC {
         Controller game = new Controller(model,view);
         //view.getReset().doClick();
         game.resetListener(model,view);
-        view.getBlocks()[0][0].doClick();
-        view.getBlocks()[1][1].doClick();
-        view.getBlocks()[2][2].doClick();
+        
+        view.getBlocks()[0][0].setText("X");
+        view.getBlocks()[1][1].setText("X");
+        view.getBlocks()[2][2].setText("X");
 
-        model.checkDiagonal();
+        //WORKS TOO
+        //view.getBlocks()[0][0].doClick(); //x
+        //view.getBlocks()[0][1].doClick();
+        //view.getBlocks()[1][1].doClick(); //x
+        //view.getBlocks()[0][2].doClick();
+        //view.getBlocks()[2][2].doClick();//x
+
+        model.checkForWin(2,2,1);
         assertEquals("Player 1 wins!",view.getPlayerturn().getText());
-
     }
 }
